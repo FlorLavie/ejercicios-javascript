@@ -53,21 +53,6 @@ function multiplicacion() {
 }
 
 
-/*Realizá un programa que permita al usuario ingresar un número natural n. La computadora debe
-mostrar los primeros n múltiplos de 3 excepto aquellos que sean a la vez múltiplos de 5.*/
-
-
-function multiplos() {
-
-    let numeroNatural = parseInt(prompt(`Ingrese un numero natural (que no sea 0)`));
-
-
-
-
-
-
-
-}
 
 
 /*Realizá un programa que permita al usuario ingresar 5 edades. La computadora debe indicar
@@ -137,5 +122,40 @@ function estaturaPromedio() {
 permita ingresar cant números enteros. La computadora debe mostrar cuál fue el mayor número y
 en qué posición apareció.*/
 
+
+function numeroMayor() {
+
+    let canti = parseInt(prompt("Ingrese un numero entero que sera la cantidad de numeros que ingresara"));
+    let max = 0;
+    let posicion;
+
+    for (let i = o; i < canti; i++);
+    let numeroPedido = parseInt(prompt("Ingrese un numero entero "))
+    if (numeroPedido > max) {
+        max = numeroPedido;
+        posicion = i;
+    }
+    alert(`El numero mayor es ${max}, en la posicion = ${posicion}`);
+}
+
+
 /*Realizá un programa que permita al usuario ingresar un número natural. La computadora debe
 mostrar el factorial1 del número.*/
+
+
+function factorial() {
+
+    let numeroNatu = parseInt(prompt("Por favor ingrese un número natural."));
+    let factorial = 1;
+
+    if (numero < 0) {
+        alert("El numero debe ser natural.");
+    } else {
+        if (numeroNatu != 0 && numeroNatu != 1) {
+            for (let n = 2; n <= numeroNatu; n++) {
+                factorial *= n;
+            }
+        }
+        alert(`El factorial de ${numeroNatu} es ${factorial}.`);
+    }
+}

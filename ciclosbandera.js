@@ -27,7 +27,7 @@ function notaDos() {
     const NOTA_MINIMAA = 0;
     const NOTA_MAXIMAA = 10;
 
-    while ((notaa < NOTA_MINIMAA) || (notaa == 1 || notaa == 3) || (notaa > NOTA_MAXIMAA)) {
+    while ((notaa < NOTA_MINIMAA) || (notaa == 1) || (notaa == 3) || (notaa > NOTA_MAXIMAA)) {
         alert("ERROR. Nota ingresada ES INVALIDA");
         notaa = parseInt(prompt("Ingrese una nota entre el 0 y el 10"));
     }
